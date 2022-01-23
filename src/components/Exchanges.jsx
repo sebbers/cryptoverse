@@ -11,7 +11,8 @@ import Loader from './Loader';
 // const { Panel } = Collapse;
 
 const Exchanges = () => {
-  const { data, isFetching } = useGetExchangesQuery();
+  // const { data, isFetching } = useGetExchangesQuery();
+  const { isFetching } = useGetExchangesQuery();
   // const exchangesList = data?.data?.exchanges;
  // Note: To access this endpoint you need premium plan
   if (isFetching) return <Loader />;
